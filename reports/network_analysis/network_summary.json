@@ -1,0 +1,17 @@
+{
+  "overview": {
+    "transfers": 9504852,
+    "unique_senders": 292715,
+    "unique_receivers": 652266,
+    "labelled_senders": 4950,
+    "labelled_transfers": 9873
+  },
+  "methodology": {
+    "data": "All valid directed transfers excluding self-transfers",
+    "amounts": "Not aggregated across currencies",
+    "reciprocal_pairs": "Two-way directed relationships, not necessarily laundering",
+    "three_account_cycles": "Structural motifs within top 5000 directed pairs; not time-ordered flows",
+    "account_connections": "Sum of distinct incoming and outgoing counterparties; may count the same counterparty twice",
+    "labels": "Synthetic dataset ground-truth labels; no production AML conclusions"
+  }
+}

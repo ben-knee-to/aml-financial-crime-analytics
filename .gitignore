@@ -1,0 +1,11 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+*.pyc
+data/raw/
+data/processed/
+models/*.joblib
+reports/**/*.parquet
+reports/**/*.csv
+.kaggle/

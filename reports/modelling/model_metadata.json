@@ -1,0 +1,45 @@
+{
+  "selected_model": "xgboost",
+  "validation_results": {
+    "random_forest": {
+      "pr_auc": 0.12083401839572916,
+      "threshold": 0.9159208217143221
+    },
+    "xgboost": {
+      "pr_auc": 0.12195053391585085,
+      "threshold": 0.9799085259437561
+    }
+  },
+  "features": [
+    "transaction_hour",
+    "transaction_day_of_week",
+    "is_weekend",
+    "previous_transaction_count",
+    "hours_since_previous",
+    "log_abs_amount",
+    "negative_amount_flag",
+    "transaction_type",
+    "currency"
+  ],
+  "numeric_features": [
+    "transaction_hour",
+    "transaction_day_of_week",
+    "is_weekend",
+    "previous_transaction_count",
+    "hours_since_previous",
+    "log_abs_amount",
+    "negative_amount_flag"
+  ],
+  "categorical_features": [
+    "transaction_type",
+    "currency"
+  ],
+  "train_rows": 250000,
+  "validation_rows": 200000,
+  "test_rows": 1421514,
+  "test_start": "2023-07-05 18:08:04.860576",
+  "validation_end": "2023-07-05 18:08:04.860576",
+  "split_method": "approximate timestamp quantiles; equal timestamps grouped",
+  "validation_sampling": "deterministic uniform subset when capped; preserves expected prevalence but adds sampling uncertainty",
+  "warning": "Synthetic data. Probabilities uncalibrated. Do not use validation-derived threshold as production threshold without prevalence-correct evaluation."
+}
